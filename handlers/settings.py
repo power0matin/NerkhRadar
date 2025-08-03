@@ -5,6 +5,7 @@ from database import update_user_settings, get_user_settings
 
 router = Router()
 
+
 @router.message(Command("settings"))
 async def cmd_settings(message: Message):
     settings = get_user_settings(message.from_user.id)
@@ -19,6 +20,7 @@ async def cmd_settings(message: Message):
         "/setcrypto btc,eth,sol"
     )
     await message.answer(response)
+
 
 @router.message(Command("settime"))
 async def set_time(message: Message):

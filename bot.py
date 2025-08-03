@@ -8,10 +8,11 @@ from database import init_db
 
 logging.basicConfig(level=logging.INFO)
 
-API_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+API_TOKEN = "7208894894:AAEatAs18BWXinxYKNwwRTln9XU7q0x651o"
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
+
 
 async def main():
     init_db()  # Initialize SQLite database
@@ -21,10 +22,11 @@ async def main():
         charts.router,
         history.router,
         conversions.router,
-        settings.router
+        settings.router,
     )
     await start_scheduler(bot)  # Start scheduler for reports and alerts
     await dp.start_polling(bot)
+
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -5,6 +5,7 @@ from utils.data_fetcher import get_dollar_price, get_gold_prices, get_crypto_pri
 
 router = Router()
 
+
 @router.message(Command("convert"))
 async def cmd_convert(message: Message):
     try:

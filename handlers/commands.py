@@ -1,14 +1,21 @@
 from aiogram import Router, F
 from aiogram.filters import Command
 from aiogram.types import Message
-from utils.data_fetcher import get_dollar_price, get_gold_prices, get_crypto_prices, get_crypto_price
+from utils.data_fetcher import (
+    get_dollar_price,
+    get_gold_prices,
+    get_crypto_prices,
+    get_crypto_price,
+)
 
 router = Router()
+
 
 @router.message(Command("dollar"))
 async def cmd_dollar(message: Message):
     price = await get_dollar_price()
     await message.answer(f"💵 قیمت دلار بازار آزاد: {price} تومان")
+
 
 @router.message(Command("gold"))
 async def cmd_gold(message: Message):
@@ -21,6 +28,7 @@ async def cmd_gold(message: Message):
     )
     await message.answer(response)
 
+
 @router.message(Command("crypto"))
 async def cmd_crypto(message: Message):
     prices = await get_crypto_prices()
@@ -28,6 +36,7 @@ async def cmd_crypto(message: Message):
     for coin, price in prices.items():
         response += f"{coin.upper()}: ${price}\n"
     await message.answer(response)
+
 
 @router.message(Command("coin"))
 async def cmd_coin(message: Message):

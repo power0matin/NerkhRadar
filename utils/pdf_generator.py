@@ -1,10 +1,12 @@
 from datetime import datetime
 from fpdf import FPDF
 
+
 class PDF(FPDF):
     def header(self):
         self.set_font("Arial", "B", 12)
         self.cell(0, 10, "Weekly Market Report", 0, 1, "C")
+
 
 def generate_weekly_report(data):
     pdf = PDF()

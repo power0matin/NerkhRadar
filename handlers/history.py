@@ -5,6 +5,7 @@ from utils.data_fetcher import get_price_history
 
 router = Router()
 
+
 @router.message(Command("history"))
 async def cmd_history(message: Message):
     try:

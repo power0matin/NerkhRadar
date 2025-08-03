@@ -70,7 +70,7 @@ nerkhradar/
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/nerkhradar.git
+   git clone https://github.com/power0matin/nerkhradar.git
    cd nerkhradar
    ```
 
