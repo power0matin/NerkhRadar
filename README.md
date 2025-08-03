@@ -161,15 +161,15 @@ Contributions to NerkhRadar are welcome! To contribute:
 4. Push to the branch (`git push origin feature-name`).
 5. Open a pull request.
 
-Check `TODO.md` for open tasks and feature ideas.
+Check [TODO.md](docs/TODO.md) for open tasks and feature ideas.
 
 ## 📜 License
 
-NerkhRadar is licensed under the [MIT License](LICENSE).
+NerkhRadar is licensed under the [Apache-2.0 license](LICENSE).
 
 ## 📬 Contact
 
-For issues or suggestions, open an issue on GitHub or contact [your-email@example.com](mailto:your-email@example.com).
+For issues or suggestions, open an issue on GitHub or contact [matinshahabadi3@gmail.com](mailto:matinshahabadi3@gmail.com).
 
 ⭐ **Star NerkhRadar on GitHub** if you find it useful!  
-🔗 [View on GitHub](https://github.com/your-username/nerkhradar)
+🔗 [View on GitHub](https://github.com/power0matin/NerkhRadar)
