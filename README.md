@@ -10,18 +10,18 @@
 ## 🚀 Features
 
 | Command                                 | Description                                                                                                     |
-| --------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ----------------------- |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | `/dollar`                               | Get real-time dollar price in Toman (from [tgju.org](https://www.tgju.org/)).                                   |
 | `/gold`                                 | View prices for gram of gold, gold coin, and global ounce.                                                      |
 | `/crypto`                               | List prices for popular cryptocurrencies (BTC, ETH, SOL) via [CoinGecko API](https://www.coingecko.com/en/api). |
 | `/coin <symbol>`                        | Get the price of a specific cryptocurrency (e.g., `/coin btc`).                                                 |
-| `/chart <asset> <daily                  | weekly>`                                                                                                        | Generate and send a price chart using Matplotlib. |
+| `/chart <asset> <daily|weekly>`         | Generate and send a price chart using Matplotlib.                                                               |
 | `/history <asset>`                      | Display price history for the past 7 days.                                                                      |
 | `/convert <amount> <asset> to <target>` | Convert between currencies (e.g., `/convert 100 usdt to toman`).                                                |
 | `/alert <asset> <condition> <value>`    | Set custom price alerts (e.g., `/alert btc >110000`).                                                           |
 | `/settings`                             | Manage user preferences (currency, report time, crypto list).                                                   |
 | `/settime HH:MM`                        | Set custom time for daily reports.                                                                              |
-| `/setcurrency <toman                    | dollar                                                                                                          | tether>`                                          | Set preferred currency. |
+| `/setcurrency <toman|dollar|tether>`   | Set preferred currency.                                                                                          |
 | `/setcrypto <coin1,coin2,...>`          | Customize cryptocurrency watchlist.                                                                             |
 
 ### Additional Features
