@@ -8,7 +8,7 @@ from database import init_db
 
 logging.basicConfig(level=logging.INFO)
 
-API_TOKEN = "7208894894:AAEatAs18BWXinxYKNwwRTln9XU7q0x651o"
+API_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
