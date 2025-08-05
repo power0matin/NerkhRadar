@@ -71,7 +71,7 @@ nerkhradar/
 
    ```bash
    git clone https://github.com/power0matin/nerkhradar.git
-   cd nerkhradar
+   cd ~/nerkhradar
    ```
 
 2. **Create a Virtual Environment**:
